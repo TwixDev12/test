@@ -1,105 +1,136 @@
 'use client'
 
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import L from 'leaflet'
+import { MapPin, Building2, Shield, Hospital, Landmark as LandmarkIcon } from 'lucide-react'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
 
-// Fonction pour créer une icône personnalisée
-const createCustomIcon = (type) => {
-  const iconColors = {
-    city: '#3b82f6',
-    military: '#ef4444',
-    hospital: '#22c55e',
-    landmark: '#eab308'
+const getMarkerIcon = (type) => {
+  const icons = {
+    city: Building2,
+    military: Shield,
+    hospital: Hospital,
+    landmark: LandmarkIcon
   }
+  return icons[type] || MapPin
+}
 
-  const iconHtml = `
-    <div style="
-      background-color: ${iconColors[type]};
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 3px solid white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-    ">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        ${type === 'city' ? '<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>' : ''}
-        ${type === 'military' ? '<path d="M11.5 2.5 3 7v6c0 5.5 3.5 7.9 8.5 8.5 5-0.6 8.5-3 8.5-8.5V7l-8.5-4.5Z"/>' : ''}
-        ${type === 'hospital' ? '<path d="M12 2L2 7v10c0 5.5 4.5 10 10 10s10-4.5 10-10V7l-10-5z"/><path d="M12 8v8"/><path d="M8 12h8"/>' : ''}
-        ${type === 'landmark' ? '<polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>' : ''}
-      </svg>
-    </div>
-  `
-
-  return L.divIcon({
-    html: iconHtml,
-    className: 'custom-marker',
-    iconSize: [30, 30],
-    iconAnchor: [15, 15],
-    popupAnchor: [0, -15]
-  })
+const getMarkerColor = (type) => {
+  const colors = {
+    city: 'text-blue-500 bg-blue-500/10 border-blue-500/20',
+    military: 'text-red-500 bg-red-500/10 border-red-500/20',
+    hospital: 'text-green-500 bg-green-500/10 border-green-500/20',
+    landmark: 'text-yellow-500 bg-yellow-500/10 border-yellow-500/20'
+  }
+  return colors[type] || 'text-gray-500 bg-gray-500/10'
 }
 
 const getLootQualityBadge = (quality) => {
   const badges = {
-    'low': { color: 'bg-gray-500', text: 'Loot Faible' },
-    'medium': { color: 'bg-yellow-500', text: 'Loot Moyen' },
-    'high': { color: 'bg-blue-500', text: 'Loot Élevé' },
-    'military': { color: 'bg-red-500', text: 'Loot Militaire' },
-    'medical': { color: 'bg-green-500', text: 'Loot Médical' }
+    'low': { color: 'bg-gray-600', text: 'Loot Faible' },
+    'medium': { color: 'bg-yellow-600', text: 'Loot Moyen' },
+    'high': { color: 'bg-blue-600', text: 'Loot Élevé' },
+    'military': { color: 'bg-red-600', text: 'Loot Militaire' },
+    'medical': { color: 'bg-green-600', text: 'Loot Médical' }
   }
   return badges[quality] || badges.medium
 }
 
+const getTypeLabel = (type) => {
+  const labels = {
+    city: 'Ville',
+    military: 'Zone Militaire',
+    hospital: 'Hôpital',
+    landmark: 'Point d\'intérêt'
+  }
+  return labels[type] || type
+}
+
 export default function InteractiveMap({ markers, mapName }) {
-  // Centre de la carte (coordonnées approximatives)
-  const mapCenter = [52, 11]
-  const mapZoom = 7
+  const mapTitle = mapName === 'chernarus' ? 'Chernarus' : 'Livonia'
+
+  // Group markers by type
+  const groupedMarkers = markers.reduce((acc, marker) => {
+    if (!acc[marker.type]) {
+      acc[marker.type] = []
+    }
+    acc[marker.type].push(marker)
+    return acc
+  }, {})
 
   return (
-    <div className="w-full h-[600px] rounded-lg overflow-hidden">
-      <MapContainer
-        center={mapCenter}
-        zoom={mapZoom}
-        style={{ height: '100%', width: '100%' }}
-        scrollWheelZoom={true}
-      >
-        <TileLayer
-          attribution='&copy; DayZ Map'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          className="map-tiles"
-        />
-        
-        {markers.map((marker) => {
-          const badge = getLootQualityBadge(marker.lootQuality)
+    <div className="w-full space-y-6">
+      {/* Map Header */}
+      <div className="bg-gradient-to-r from-primary/20 via-primary/10 to-transparent p-6 rounded-lg border border-primary/20">
+        <h3 className="text-2xl font-bold mb-2 flex items-center gap-2">
+          <MapPin className="w-6 h-6 text-primary" />
+          Carte de {mapTitle}
+        </h3>
+        <p className="text-muted-foreground">
+          {markers.length} locations disponibles sur cette carte
+        </p>
+      </div>
+
+      {/* Markers Grid by Type */}
+      <div className="space-y-8">
+        {Object.entries(groupedMarkers).map(([type, typeMarkers]) => {
+          const Icon = getMarkerIcon(type)
           return (
-            <Marker
-              key={marker.id}
-              position={marker.coordinates}
-              icon={createCustomIcon(marker.type)}
-            >
-              <Popup>
-                <div className="min-w-[200px] p-2">
-                  <h3 className="font-bold text-lg mb-2">{marker.name}</h3>
-                  <div className="mb-2">
-                    <span className={`inline-block px-2 py-1 rounded text-xs text-white ${badge.color}`}>
-                      {badge.text}
-                    </span>
-                  </div>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">
-                    {marker.description}
-                  </p>
-                  <div className="mt-2 text-xs text-gray-500">
-                    <strong>Type:</strong> {marker.type}
-                  </div>
-                </div>
-              </Popup>
-            </Marker>
+            <div key={type}>
+              <h4 className="text-xl font-bold mb-4 flex items-center gap-2">
+                <Icon className={`w-5 h-5 ${getMarkerColor(type).split(' ')[0]}`} />
+                {getTypeLabel(type)}s ({typeMarkers.length})
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {typeMarkers.map((marker) => {
+                  const badge = getLootQualityBadge(marker.lootQuality)
+                  return (
+                    <Card 
+                      key={marker.id} 
+                      className={`hover:border-primary/50 transition-all duration-300 border-2 ${getMarkerColor(type).split(' ').slice(1).join(' ')}`}
+                    >
+                      <CardHeader className="pb-3">
+                        <div className="flex items-start justify-between gap-2">
+                          <div className="flex-1">
+                            <CardTitle className="text-lg flex items-center gap-2">
+                              <Icon className={`w-5 h-5 ${getMarkerColor(type).split(' ')[0]}`} />
+                              {marker.name}
+                            </CardTitle>
+                          </div>
+                          <Badge className={`${badge.color} text-white text-xs`}>
+                            {badge.text}
+                          </Badge>
+                        </div>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-sm text-muted-foreground mb-3">
+                          {marker.description}
+                        </p>
+                        <div className="flex items-center justify-between text-xs">
+                          <span className="text-muted-foreground">
+                            <strong>Type:</strong> {getTypeLabel(marker.type)}
+                          </span>
+                          <span className="text-muted-foreground font-mono">
+                            [{marker.coordinates[0].toFixed(2)}, {marker.coordinates[1].toFixed(2)}]
+                          </span>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  )
+                })}
+              </div>
+            </div>
           )
         })}
-      </MapContainer>
+      </div>
+
+      {markers.length === 0 && (
+        <Card>
+          <CardContent className="py-12 text-center">
+            <MapPin className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
+            <p className="text-muted-foreground">Aucun marker à afficher</p>
+          </CardContent>
+        </Card>
+      )}
     </div>
   )
 }

@@ -1,28 +1,11 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import dynamic from 'next/dynamic'
+import InteractiveMap from '@/components/map/InteractiveMap'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { Badge } from '@/components/ui/badge'
 import { MapPin, X } from 'lucide-react'
-
-// Import dynamique de la carte pour éviter les erreurs SSR
-const InteractiveMap = dynamic(
-  () => import('@/components/map/InteractiveMap').then(mod => mod.default),
-  {
-    ssr: false,
-    loading: () => (
-      <div className="w-full h-[600px] bg-card flex items-center justify-center">
-        <div className="text-center">
-          <MapPin className="w-12 h-12 text-primary mx-auto mb-4 animate-pulse" />
-          <p className="text-muted-foreground">Chargement de la carte...</p>
-        </div>
-      </div>
-    )
-  }
-)
 
 export default function CartePage() {
   const [markers, setMarkers] = useState({ chernarus: [], livonia: [] })
@@ -115,20 +98,19 @@ export default function CartePage() {
 
         {/* Carte */}
         <div className="lg:col-span-3">
-          <Card>
-            <CardContent className="p-0">
-              {loading ? (
-                <div className="w-full h-[600px] flex items-center justify-center">
-                  <MapPin className="w-12 h-12 text-primary animate-pulse" />
-                </div>
-              ) : (
-                <InteractiveMap
-                  markers={filteredMarkers}
-                  mapName={selectedMap}
-                />
-              )}
-            </CardContent>
-          </Card>
+          {loading ? (
+            <Card>
+              <CardContent className="py-20 text-center">
+                <MapPin className="w-12 h-12 text-primary mx-auto mb-4 animate-pulse" />
+                <p className="text-muted-foreground">Chargement de la carte...</p>
+              </CardContent>
+            </Card>
+          ) : (
+            <InteractiveMap
+              markers={filteredMarkers}
+              mapName={selectedMap}
+            />
+          )}
         </div>
       </div>
 
