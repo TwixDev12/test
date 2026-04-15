@@ -9,17 +9,20 @@ import { Badge } from '@/components/ui/badge'
 import { MapPin, X } from 'lucide-react'
 
 // Import dynamique de la carte pour éviter les erreurs SSR
-const InteractiveMap = dynamic(() => import('@/components/map/InteractiveMap'), {
-  ssr: false,
-  loading: () => (
-    <div className="w-full h-[600px] bg-card flex items-center justify-center">
-      <div className="text-center">
-        <MapPin className="w-12 h-12 text-primary mx-auto mb-4 animate-pulse" />
-        <p className="text-muted-foreground">Chargement de la carte...</p>
+const InteractiveMap = dynamic(
+  () => import('@/components/map/InteractiveMap').then(mod => mod.default),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="w-full h-[600px] bg-card flex items-center justify-center">
+        <div className="text-center">
+          <MapPin className="w-12 h-12 text-primary mx-auto mb-4 animate-pulse" />
+          <p className="text-muted-foreground">Chargement de la carte...</p>
+        </div>
       </div>
-    </div>
-  )
-})
+    )
+  }
+)
 
 export default function CartePage() {
   const [markers, setMarkers] = useState({ chernarus: [], livonia: [] })
