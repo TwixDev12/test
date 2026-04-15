@@ -1,0 +1,152 @@
+[
+  {
+    "id": "survival-1",
+    "category": "Faim et Soif",
+    "title": "Gestion de la faim",
+    "icon": "🍖",
+    "tips": [
+      "Icône pomme = faim, icône goutte = soif",
+      "Mangez avant que l'icône devienne rouge",
+      "Cuisez TOUJOURS la viande pour éviter salmonella",
+      "Fruits et légumes = hydratation + nourriture",
+      "Conserves = sûres à manger directement",
+      "Viande crue = risque de maladie"
+    ]
+  },
+  {
+    "id": "survival-2",
+    "category": "Faim et Soif",
+    "title": "Gestion de l'eau",
+    "icon": "💧",
+    "tips": [
+      "NE JAMAIS boire l'eau de rivière/lac sans purifier",
+      "Purifier avec: tablettes chlorine ou faire bouillir",
+      "Pompes à eau (villes) = eau sûre",
+      "Gourdes rouges = contaminées (vider et remplir à pompe)",
+      "Sodas et boissons en bouteille = sûrs",
+      "Déshydratation = mort rapide, priorité #1"
+    ]
+  },
+  {
+    "id": "survival-3",
+    "category": "Température",
+    "title": "Maintenir température corporelle",
+    "icon": "🌡️",
+    "tips": [
+      "Thermomètre: bleu = froid, rouge = chaud, blanc = ok",
+      "Hypothermie = TRÈS dangereux (mort rapide)",
+      "Éviter de se mouiller (pluie, nager)",
+      "Feu de camp = réchauffe rapidement",
+      "Vêtements: isolants pour le froid, légers pour le chaud",
+      "Entrer dans bâtiments pour se réchauffer",
+      "Sécher vêtements près du feu"
+    ]
+  },
+  {
+    "id": "survival-4",
+    "category": "Loot Management",
+    "title": "Priorités de loot",
+    "icon": "🎒",
+    "tips": [
+      "Priorité 1: Eau + Nourriture",
+      "Priorité 2: Arme (couteau minimum)",
+      "Priorité 3: Sac à dos",
+      "Priorité 4: Vêtements adaptés",
+      "Priorité 5: Medical supplies (bandages)",
+      "Toujours avoir: couteau, briquet/allumettes, bandages",
+      "Garder inventaire organisé par type"
+    ]
+  },
+  {
+    "id": "survival-5",
+    "category": "Loot Management",
+    "title": "Zones de loot",
+    "icon": "📍",
+    "tips": [
+      "Spawn côte = chercher fruits/loot de plage d'abord",
+      "Petites villes = safer, loot basique",
+      "Grandes villes = high loot mais PvP intense",
+      "Bases militaires = meilleur gear mais TRÈS risqué",
+      "Hôpitaux = medical supplies essentiels",
+      "Commissariats = armes et munitions",
+      "Fermes = nourriture et outils"
+    ]
+  },
+  {
+    "id": "survival-6",
+    "category": "Combat PvP",
+    "title": "Conseils PvP",
+    "icon": "⚔️",
+    "tips": [
+      "TOUJOURS assumer que les joueurs sont hostiles",
+      "Éviter grandes villes si débutant",
+      "Couverture > exposition",
+      "Déplacements imprévisibles (zig-zag)",
+      "Écouter les coups de feu pour éviter combats",
+      "Sniper à distance = plus sûr",
+      "Toujours avoir bandages prêts",
+      "Plates + casque balistique = survie accrue"
+    ]
+  },
+  {
+    "id": "survival-7",
+    "category": "Combat PvP",
+    "title": "Éviter les joueurs",
+    "icon": "👤",
+    "tips": [
+      "Voyager dans les bois plutôt que routes",
+      "Éviter spawn points populaires",
+      "Serveurs low pop = moins de risque",
+      "Ghillie suit = camouflage parfait",
+      "Ne pas utiliser voix/chat si furtif",
+      "Observer avant d'entrer dans une ville",
+      "Portes ouvertes = joueurs récents"
+    ]
+  },
+  {
+    "id": "survival-8",
+    "category": "Zombies",
+    "title": "Gérer les zombies",
+    "icon": "🧟",
+    "tips": [
+      "Zombies attirés par: bruit, mouvement, lumière",
+      "Armes silencieuses préférées (couteau, suppressor)",
+      "Courir en ville = attire tous les zombies",
+      "Combattre en reculant = plus sûr",
+      "1 hit tête avec couteau = kill",
+      "Entrer dans bâtiment = lose aggro",
+      "Blessures de zombies = risque d'infection"
+    ]
+  },
+  {
+    "id": "survival-9",
+    "category": "Premiers Secours",
+    "title": "Soigner blessures",
+    "icon": "🩹",
+    "tips": [
+      "Saignement = priorité absolue (bandages/rags)",
+      "Fracture = splint (craft avec sticks + bandage)",
+      "Toujours désinfecter plaies (alcool/iode)",
+      "Blood bag = restaure sang perdu",
+      "Saline bag = restaure hydratation + un peu de sang",
+      "Morphine = stop pain",
+      "Epinephrine = boost temporaire"
+    ]
+  },
+  {
+    "id": "survival-10",
+    "category": "Base Building",
+    "title": "Construire une base",
+    "icon": "🏠",
+    "tips": [
+      "Choisir location isolée (forêt, loin des routes)",
+      "Tente = stockage basique temporaire",
+      "Barrels = stockage waterproof",
+      "Clôtures + portes = protection",
+      "Cadenas = sécuriser entrées",
+      "Pliers = nécessaires pour construire",
+      "Cacher base dans végétation dense",
+      "Éviter bases trop visibles = raid"
+    ]
+  }
+]

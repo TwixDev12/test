@@ -1,18 +1,32 @@
 import './globals.css'
+import { Inter } from 'next/font/google'
+import Navigation from '@/components/Navigation'
+
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Next.js MongoDB Template',
-  description: 'A simple template with App Router, MongoDB, and shadcn/ui',
+  title: 'DayZ Wiki - Guide Complet de Survie',
+  description: 'Wiki interactif pour DayZ: cartes, crafting, soins médicaux, guide de survie',
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="fr" className="dark">
       <head>
-        <script dangerouslySetInnerHTML={{__html:'window.addEventListener("error",function(e){if(e.error instanceof DOMException&&e.error.name==="DataCloneError"&&e.message&&e.message.includes("PerformanceServerTiming")){e.stopImmediatePropagation();e.preventDefault()}},true);'}} />
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossOrigin=""
+        />
       </head>
-      <body>
-        {children}
+      <body className={inter.className}>
+        <div className="min-h-screen bg-background">
+          <Navigation />
+          <main className="pt-16">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   )

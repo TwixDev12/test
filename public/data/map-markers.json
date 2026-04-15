@@ -1,0 +1,246 @@
+{
+  "chernarus": [
+    {
+      "id": "chern-1",
+      "name": "Elektrozavodsk",
+      "type": "city",
+      "coordinates": [51.4, 11.0],
+      "description": "Grande ville côtière, high loot, très dangereux (PvP)",
+      "lootQuality": "high"
+    },
+    {
+      "id": "chern-2",
+      "name": "Chernogorsk",
+      "type": "city",
+      "coordinates": [51.2, 10.0],
+      "description": "Grande ville industrielle, excellent loot",
+      "lootQuality": "high"
+    },
+    {
+      "id": "chern-3",
+      "name": "Berezino",
+      "type": "city",
+      "coordinates": [52.5, 13.0],
+      "description": "Ville côtière du nord-est, populaire pour le loot",
+      "lootQuality": "high"
+    },
+    {
+      "id": "chern-4",
+      "name": "NWAF (Northwest Airfield)",
+      "type": "military",
+      "coordinates": [52.8, 9.5],
+      "description": "Base aérienne militaire, meilleur loot militaire, TRÈS DANGEREUX",
+      "lootQuality": "military"
+    },
+    {
+      "id": "chern-5",
+      "name": "Tisy Military Base",
+      "type": "military",
+      "coordinates": [53.5, 8.5],
+      "description": "Base militaire au nord, loot tier 4, extrêmement risqué",
+      "lootQuality": "military"
+    },
+    {
+      "id": "chern-6",
+      "name": "Balota Airfield",
+      "type": "military",
+      "coordinates": [51.0, 9.0],
+      "description": "Aérodrome militaire au sud, spawn area populaire",
+      "lootQuality": "military"
+    },
+    {
+      "id": "chern-7",
+      "name": "Stary Sobor",
+      "type": "city",
+      "coordinates": [52.0, 10.5],
+      "description": "Ville centrale, base militaire à proximité",
+      "lootQuality": "medium"
+    },
+    {
+      "id": "chern-8",
+      "name": "Zelenogorsk",
+      "type": "city",
+      "coordinates": [51.5, 9.0],
+      "description": "Ville moyenne à l'ouest, bon loot général",
+      "lootQuality": "medium"
+    },
+    {
+      "id": "chern-9",
+      "name": "Novo Village",
+      "type": "city",
+      "coordinates": [52.0, 12.5],
+      "description": "Ville industrielle de la côte est",
+      "lootQuality": "medium"
+    },
+    {
+      "id": "chern-10",
+      "name": "Hospital Elektro",
+      "type": "hospital",
+      "coordinates": [51.38, 11.05],
+      "description": "Hôpital, medical loot de qualité",
+      "lootQuality": "medical"
+    },
+    {
+      "id": "chern-11",
+      "name": "Hospital Cherno",
+      "type": "hospital",
+      "coordinates": [51.18, 10.0],
+      "description": "Hôpital de Cherno, équipement médical",
+      "lootQuality": "medical"
+    },
+    {
+      "id": "chern-12",
+      "name": "Hospital Berezino",
+      "type": "hospital",
+      "coordinates": [52.48, 13.02],
+      "description": "Hôpital côtier, medical supplies",
+      "lootQuality": "medical"
+    },
+    {
+      "id": "chern-13",
+      "name": "Green Mountain",
+      "type": "landmark",
+      "coordinates": [51.8, 9.5],
+      "description": "Tour de transmission, lieu mystérieux",
+      "lootQuality": "low"
+    },
+    {
+      "id": "chern-14",
+      "name": "Devils Castle",
+      "type": "landmark",
+      "coordinates": [52.2, 10.8],
+      "description": "Château, bonne vue stratégique",
+      "lootQuality": "medium"
+    },
+    {
+      "id": "chern-15",
+      "name": "Kamensk Military Base",
+      "type": "military",
+      "coordinates": [52.8, 12.5],
+      "description": "Base militaire de l'est, loot militaire tier 3-4",
+      "lootQuality": "military"
+    }
+  ],
+  "livonia": [
+    {
+      "id": "liv-1",
+      "name": "Gieraltow",
+      "type": "city",
+      "coordinates": [51.5, 10.5],
+      "description": "Grande ville de Livonia, excellent loot",
+      "lootQuality": "high"
+    },
+    {
+      "id": "liv-2",
+      "name": "Nadbor",
+      "type": "city",
+      "coordinates": [52.0, 11.0],
+      "description": "Ville industrielle, bon loot général",
+      "lootQuality": "high"
+    },
+    {
+      "id": "liv-3",
+      "name": "Sitnik",
+      "type": "city",
+      "coordinates": [51.8, 9.5],
+      "description": "Petite ville, loot médical",
+      "lootQuality": "medium"
+    },
+    {
+      "id": "liv-4",
+      "name": "Kolembrody",
+      "type": "city",
+      "coordinates": [52.3, 10.0],
+      "description": "Ville moyenne avec zone industrielle",
+      "lootQuality": "medium"
+    },
+    {
+      "id": "liv-5",
+      "name": "Grabin",
+      "type": "city",
+      "coordinates": [51.2, 11.5],
+      "description": "Ville côtière, spawn area",
+      "lootQuality": "medium"
+    },
+    {
+      "id": "liv-6",
+      "name": "Topolin",
+      "type": "city",
+      "coordinates": [52.5, 11.5],
+      "description": "Petite ville au nord",
+      "lootQuality": "low"
+    },
+    {
+      "id": "liv-7",
+      "name": "Swarog Military Base",
+      "type": "military",
+      "coordinates": [52.8, 10.8],
+      "description": "Grande base militaire, loot tier 4",
+      "lootQuality": "military"
+    },
+    {
+      "id": "liv-8",
+      "name": "Radunin Military Base",
+      "type": "military",
+      "coordinates": [51.5, 9.8],
+      "description": "Base militaire sud, bon loot militaire",
+      "lootQuality": "military"
+    },
+    {
+      "id": "liv-9",
+      "name": "Lembork Military Base",
+      "type": "military",
+      "coordinates": [52.2, 11.8],
+      "description": "Complexe militaire, très dangereux",
+      "lootQuality": "military"
+    },
+    {
+      "id": "liv-10",
+      "name": "Hospital Gieraltow",
+      "type": "hospital",
+      "coordinates": [51.52, 10.55],
+      "description": "Hôpital principal, medical supplies",
+      "lootQuality": "medical"
+    },
+    {
+      "id": "liv-11",
+      "name": "Hospital Nadbor",
+      "type": "hospital",
+      "coordinates": [52.02, 11.05],
+      "description": "Clinique médicale",
+      "lootQuality": "medical"
+    },
+    {
+      "id": "liv-12",
+      "name": "Hunting Lodge",
+      "type": "landmark",
+      "coordinates": [52.0, 10.5],
+      "description": "Pavillon de chasse, loot de chasse",
+      "lootQuality": "medium"
+    },
+    {
+      "id": "liv-13",
+      "name": "Abandoned Factory",
+      "type": "landmark",
+      "coordinates": [51.7, 10.2],
+      "description": "Usine abandonnée, loot industriel",
+      "lootQuality": "medium"
+    },
+    {
+      "id": "liv-14",
+      "name": "Crashed Plane Site",
+      "type": "landmark",
+      "coordinates": [52.4, 10.5],
+      "description": "Site d'avion crashé, rare loot",
+      "lootQuality": "high"
+    },
+    {
+      "id": "liv-15",
+      "name": "Lumber Mill",
+      "type": "landmark",
+      "coordinates": [51.9, 11.3],
+      "description": "Scierie, loot industriel et outils",
+      "lootQuality": "medium"
+    }
+  ]
+}

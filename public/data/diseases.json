@@ -1,0 +1,213 @@
+[
+  {
+    "id": "disease-1",
+    "name": "Cholera",
+    "severity": "high",
+    "symptoms": [
+      "Déshydratation rapide",
+      "Vomissements",
+      "Icône d'estomac malade"
+    ],
+    "causes": [
+      "Boire de l'eau non purifiée",
+      "Manger avec les mains sales",
+      "Boire dans des plans d'eau contaminés"
+    ],
+    "treatment": [
+      "Tetracycline Pills (antibiotiques)",
+      "Rester hydraté avec de l'eau purifiée",
+      "Attendre que les symptômes passent"
+    ],
+    "prevention": [
+      "Toujours purifier l'eau (tablettes ou faire bouillir)",
+      "Se laver les mains avec du savon",
+      "Utiliser des gourdes propres"
+    ]
+  },
+  {
+    "id": "disease-2",
+    "name": "Influenza (Grippe)",
+    "severity": "medium",
+    "symptoms": [
+      "Toux fréquente",
+      "Température corporelle basse",
+      "Perte d'énergie"
+    ],
+    "causes": [
+      "Exposition au froid et à la pluie",
+      "Hypothermie",
+      "Vêtements mouillés",
+      "Contact avec joueurs infectés"
+    ],
+    "treatment": [
+      "Tetracycline Pills",
+      "Se réchauffer près d'un feu",
+      "Changer de vêtements secs",
+      "Repos et nourriture"
+    ],
+    "prevention": [
+      "Rester au sec",
+      "Porter des vêtements chauds",
+      "Éviter le contact avec joueurs malades",
+      "Maintenir température corporelle"
+    ]
+  },
+  {
+    "id": "disease-3",
+    "name": "Salmonella (Intoxication alimentaire)",
+    "severity": "medium",
+    "symptoms": [
+      "Vomissements",
+      "Perte de sang",
+      "Déshydratation",
+      "Icône d'estomac malade"
+    ],
+    "causes": [
+      "Manger de la nourriture crue ou pourrie",
+      "Manger de la viande humaine",
+      "Viande mal cuite"
+    ],
+    "treatment": [
+      "Charcoal Tablets",
+      "Rester hydraté",
+      "Attendre que ça passe naturellement"
+    ],
+    "prevention": [
+      "Toujours cuire la viande",
+      "Vérifier l'état de la nourriture",
+      "Ne pas manger de viande humaine",
+      "Utiliser un feu de camp"
+    ]
+  },
+  {
+    "id": "disease-4",
+    "name": "Blood Infection (Infection sanguine)",
+    "severity": "critical",
+    "symptoms": [
+      "Perte de santé continue",
+      "Fièvre",
+      "Icône de sang infecté"
+    ],
+    "causes": [
+      "Blessures non soignées",
+      "Bandages sales",
+      "Plaies infectées"
+    ],
+    "treatment": [
+      "Tetracycline Pills (URGENT)",
+      "Soigner toutes les blessures",
+      "Repos et nourriture"
+    ],
+    "prevention": [
+      "Soigner immédiatement les blessures",
+      "Utiliser bandages propres",
+      "Désinfecter avec alcool/iode",
+      "Éviter les zombies"
+    ]
+  },
+  {
+    "id": "disease-5",
+    "name": "Gas Poisoning (Empoisonnement au gaz)",
+    "severity": "high",
+    "symptoms": [
+      "Toux sévère",
+      "Perte de santé rapide",
+      "Vision trouble"
+    ],
+    "causes": [
+      "Entrer dans zone de gaz toxique sans protection",
+      "Masque à gaz endommagé",
+      "Filtre de masque périmé"
+    ],
+    "treatment": [
+      "Quitter la zone immédiatement",
+      "PO-X Antidote (si disponible)",
+      "Attendre que les symptômes passent"
+    ],
+    "prevention": [
+      "Porter un masque à gaz avec filtre valide",
+      "Éviter les zones de gaz",
+      "Vérifier l'état du filtre"
+    ]
+  },
+  {
+    "id": "disease-6",
+    "name": "Wound Infection (Infection de plaie)",
+    "severity": "medium",
+    "symptoms": [
+      "Plaies qui ne guérissent pas",
+      "Fièvre légère",
+      "Perte de santé"
+    ],
+    "causes": [
+      "Ne pas désinfecter les blessures",
+      "Utiliser bandages sales",
+      "Blessures multiples non traitées"
+    ],
+    "treatment": [
+      "Alcoholic Tincture ou Iode",
+      "Bandages propres",
+      "Tetracycline Pills si grave"
+    ],
+    "prevention": [
+      "Toujours désinfecter les plaies",
+      "Utiliser bandages propres",
+      "Soigner rapidement"
+    ]
+  },
+  {
+    "id": "disease-7",
+    "name": "Hypothermia (Hypothermie)",
+    "severity": "high",
+    "symptoms": [
+      "Température très basse",
+      "Frissons constants",
+      "Perte d'énergie rapide",
+      "Vision floue"
+    ],
+    "causes": [
+      "Exposition prolongée au froid",
+      "Vêtements mouillés",
+      "Nager dans l'eau froide",
+      "Pluie sans protection"
+    ],
+    "treatment": [
+      "Se réchauffer près d'un feu IMMÉDIATEMENT",
+      "Changer vêtements secs",
+      "Boire boissons chaudes",
+      "Rentrer dans un bâtiment"
+    ],
+    "prevention": [
+      "Porter vêtements chauds",
+      "Éviter de se mouiller",
+      "Utiliser imperméables",
+      "Rester près d'abris"
+    ]
+  },
+  {
+    "id": "disease-8",
+    "name": "Hyperthermia (Hyperthermie)",
+    "severity": "medium",
+    "symptoms": [
+      "Température très élevée",
+      "Soif extrême",
+      "Perte d'énergie"
+    ],
+    "causes": [
+      "Trop de vêtements chauds",
+      "Exposition au soleil",
+      "Près d'un feu trop longtemps"
+    ],
+    "treatment": [
+      "Enlever vêtements chauds",
+      "Boire beaucoup d'eau",
+      "Se mettre à l'ombre",
+      "Mouiller ses vêtements"
+    ],
+    "prevention": [
+      "Adapter vêtements à la température",
+      "Rester hydraté",
+      "Éviter exposition prolongée au soleil"
+    ]
+  }
+]

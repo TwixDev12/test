@@ -1,0 +1,183 @@
+[
+  {
+    "id": "craft-1",
+    "name": "Improvised Backpack",
+    "category": "Storage",
+    "ingredients": [
+      "Burlap Sack",
+      "Rope"
+    ],
+    "result": "Improvised Backpack (63 slots)",
+    "description": "Un sac à dos improvisé offrant 63 emplacements de stockage.",
+    "utility": "Excellent pour débuter, facile à fabriquer"
+  },
+  {
+    "id": "craft-2",
+    "name": "Leather Backpack",
+    "category": "Storage",
+    "ingredients": [
+      "Leather",
+      "Leather",
+      "Leather"
+    ],
+    "result": "Leather Backpack (63 slots)",
+    "description": "Sac à dos en cuir durable.",
+    "utility": "Plus résistant que l'improvised backpack"
+  },
+  {
+    "id": "craft-3",
+    "name": "Splint",
+    "category": "Medical",
+    "ingredients": [
+      "Bandage/Rag",
+      "Wooden Stick (x2)"
+    ],
+    "result": "Splint",
+    "description": "Attelle pour soigner les fractures.",
+    "utility": "Essentiel pour réparer les jambes ou bras cassés"
+  },
+  {
+    "id": "craft-4",
+    "name": "Fireplace",
+    "category": "Survival",
+    "ingredients": [
+      "Firewood (x8)",
+      "Rag/Paper/Bark"
+    ],
+    "result": "Fireplace",
+    "description": "Feu de camp pour cuisiner et se réchauffer.",
+    "utility": "Cuire la nourriture, se réchauffer, purifier l'eau"
+  },
+  {
+    "id": "craft-5",
+    "name": "Stone Knife",
+    "category": "Tools",
+    "ingredients": [
+      "Stone (x2)"
+    ],
+    "result": "Stone Knife",
+    "description": "Couteau basique en pierre.",
+    "utility": "Outil de base pour couper, dépecer, ouvrir des boîtes"
+  },
+  {
+    "id": "craft-6",
+    "name": "Fishing Rod",
+    "category": "Tools",
+    "ingredients": [
+      "Long Wooden Stick",
+      "Rope",
+      "Bone Hook/Metal Hook"
+    ],
+    "result": "Fishing Rod",
+    "description": "Canne à pêche pour attraper du poisson.",
+    "utility": "Source de nourriture fiable près des points d'eau"
+  },
+  {
+    "id": "craft-7",
+    "name": "Ghillie Suit (Hood)",
+    "category": "Clothing",
+    "ingredients": [
+      "Burlap Sack",
+      "Netting (x10)"
+    ],
+    "result": "Ghillie Hood",
+    "description": "Capuche de camouflage ghillie.",
+    "utility": "Camouflage parfait pour le PvP et la chasse"
+  },
+  {
+    "id": "craft-8",
+    "name": "Ghillie Suit (Top)",
+    "category": "Clothing",
+    "ingredients": [
+      "Burlap Strips (x4)",
+      "Netting (x10)"
+    ],
+    "result": "Ghillie Suit Top",
+    "description": "Haut de tenue ghillie.",
+    "utility": "Camouflage pour le haut du corps"
+  },
+  {
+    "id": "craft-9",
+    "name": "Improvised Shelter",
+    "category": "Base Building",
+    "ingredients": [
+      "Long Wooden Stick (x4)",
+      "Short Stick (x50)"
+    ],
+    "result": "Improvised Shelter",
+    "description": "Abri de base pour se protéger.",
+    "utility": "Stockage temporaire et protection contre les intempéries"
+  },
+  {
+    "id": "craft-10",
+    "name": "Leather Sewing Kit",
+    "category": "Tools",
+    "ingredients": [
+      "Leather",
+      "Bone Needle"
+    ],
+    "result": "Leather Sewing Kit",
+    "description": "Kit de couture en cuir.",
+    "utility": "Réparer les vêtements et équipements"
+  },
+  {
+    "id": "craft-11",
+    "name": "Improvised Knife",
+    "category": "Tools",
+    "ingredients": [
+      "Stone",
+      "Rag/Bandage"
+    ],
+    "result": "Improvised Knife",
+    "description": "Couteau improvisé de base.",
+    "utility": "Alternative rapide au stone knife"
+  },
+  {
+    "id": "craft-12",
+    "name": "Torch",
+    "category": "Lighting",
+    "ingredients": [
+      "Long Wooden Stick",
+      "Rag"
+    ],
+    "result": "Torch",
+    "description": "Torche pour s'éclairer.",
+    "utility": "Source de lumière réutilisable"
+  },
+  {
+    "id": "craft-13",
+    "name": "Improvised Bow",
+    "category": "Weapons",
+    "ingredients": [
+      "Long Wooden Stick",
+      "Rope"
+    ],
+    "result": "Improvised Bow",
+    "description": "Arc improvisé pour la chasse.",
+    "utility": "Arme silencieuse pour la chasse et le PvP"
+  },
+  {
+    "id": "craft-14",
+    "name": "Wooden Arrow",
+    "category": "Ammunition",
+    "ingredients": [
+      "Wooden Stick",
+      "Feather",
+      "Bone"
+    ],
+    "result": "Wooden Arrow",
+    "description": "Flèche en bois pour l'arc.",
+    "utility": "Munition pour arc"
+  },
+  {
+    "id": "craft-15",
+    "name": "Garden Plot",
+    "category": "Farming",
+    "ingredients": [
+      "Wooden Stick (x8)"
+    ],
+    "result": "Garden Plot",
+    "description": "Parcelle pour cultiver des légumes.",
+    "utility": "Agriculture pour nourriture durable"
+  }
+]
