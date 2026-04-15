@@ -5,88 +5,121 @@
       "name": "Elektrozavodsk",
       "type": "city",
       "coordinates": [51.4, 11.0],
-      "description": "Grande ville côtière, high loot, très dangereux (PvP)",
-      "lootQuality": "high"
+      "description": "Grande ville côtière avec zone industrielle",
+      "lootQuality": "high",
+      "lootTypes": ["Armes", "Nourriture", "Vêtements", "Outils", "Médical"],
+      "buildings": "Supermarché, Station Police, Caserne Pompiers, 50+ maisons",
+      "danger": "Très élevé (PvP hotspot)"
     },
     {
       "id": "chern-2",
       "name": "Chernogorsk",
       "type": "city",
       "coordinates": [51.2, 10.0],
-      "description": "Grande ville industrielle, excellent loot",
-      "lootQuality": "high"
+      "description": "Très grande ville industrielle avec port",
+      "lootQuality": "high",
+      "lootTypes": ["Armes", "Nourriture", "Industriel", "Médical", "Militaire (rare)"],
+      "buildings": "2 Supermarchés, Hôpital, Police, Caserne, Zone industrielle",
+      "danger": "Élevé"
     },
     {
       "id": "chern-3",
       "name": "Berezino",
       "type": "city",
       "coordinates": [52.5, 13.0],
-      "description": "Ville côtière du nord-est, populaire pour le loot",
-      "lootQuality": "high"
+      "description": "Ville côtière populaire, spawn point commun",
+      "lootQuality": "high",
+      "lootTypes": ["Armes civiles", "Nourriture", "Vêtements", "Médical"],
+      "buildings": "Hôpital, Police, Pompiers, Supermarché, 40+ maisons",
+      "danger": "Très élevé"
     },
     {
       "id": "chern-4",
       "name": "NWAF (Northwest Airfield)",
       "type": "military",
       "coordinates": [52.8, 9.5],
-      "description": "Base aérienne militaire, meilleur loot militaire, TRÈS DANGEREUX",
-      "lootQuality": "military"
+      "description": "Plus grande base militaire, loot tier 4",
+      "lootQuality": "military",
+      "lootTypes": ["Armes militaires", "Munitions", "Équipement tactique", "Plates", "Casques"],
+      "buildings": "Barracks (x6), ATC Tower, Hangars (x4), Tentes militaires (x12)",
+      "danger": "EXTRÊME - KOS zone"
     },
     {
       "id": "chern-5",
       "name": "Tisy Military Base",
       "type": "military",
       "coordinates": [53.5, 8.5],
-      "description": "Base militaire au nord, loot tier 4, extrêmement risqué",
-      "lootQuality": "military"
+      "description": "Base militaire tier 4, meilleur loot du jeu",
+      "lootQuality": "military",
+      "lootTypes": ["Armes rares", "Ghillie", "NVG", "Suppressors", "High-tier gear"],
+      "buildings": "Barracks (x4), Bunker militaire, Tentes (x8)",
+      "danger": "EXTRÊME"
     },
     {
       "id": "chern-6",
       "name": "Balota Airfield",
       "type": "military",
       "coordinates": [51.0, 9.0],
-      "description": "Aérodrome militaire au sud, spawn area populaire",
-      "lootQuality": "military"
+      "description": "Aérodrome militaire au sud, spawn area",
+      "lootQuality": "military",
+      "lootTypes": ["Armes militaires", "Munitions", "Vêtements militaires"],
+      "buildings": "ATC Tower, Hangars (x2), Barracks (x2), Tentes (x6)",
+      "danger": "Très élevé"
     },
     {
       "id": "chern-7",
       "name": "Stary Sobor",
       "type": "city",
       "coordinates": [52.0, 10.5],
-      "description": "Ville centrale, base militaire à proximité",
-      "lootQuality": "medium"
+      "description": "Ville moyenne avec tentes militaires à proximité",
+      "lootQuality": "medium",
+      "lootTypes": ["Nourriture", "Vêtements", "Outils", "Armes civiles"],
+      "buildings": "Supermarché, Police, 30+ maisons, Tentes militaires nearby",
+      "danger": "Moyen"
     },
     {
       "id": "chern-8",
       "name": "Zelenogorsk",
       "type": "city",
       "coordinates": [51.5, 9.0],
-      "description": "Ville moyenne à l'ouest, bon loot général",
-      "lootQuality": "medium"
+      "description": "Grande ville à l'ouest, base militaire proche",
+      "lootQuality": "high",
+      "lootTypes": ["Nourriture", "Médical", "Armes", "Industriel"],
+      "buildings": "Supermarché, Hôpital, Police, 45+ maisons",
+      "danger": "Moyen-Élevé"
     },
     {
       "id": "chern-9",
       "name": "Novo Village",
       "type": "city",
       "coordinates": [52.0, 12.5],
-      "description": "Ville industrielle de la côte est",
-      "lootQuality": "medium"
+      "description": "Village industriel côtier avec usines",
+      "lootQuality": "medium",
+      "lootTypes": ["Industriel", "Outils", "Nourriture", "Vêtements"],
+      "buildings": "Usines (x3), Entrepôts, Police, 25+ maisons",
+      "danger": "Moyen"
     },
     {
       "id": "chern-10",
       "name": "Hospital Elektro",
       "type": "hospital",
       "coordinates": [51.38, 11.05],
-      "description": "Hôpital, medical loot de qualité",
-      "lootQuality": "medical"
+      "description": "Grand hôpital, tout le loot médical",
+      "lootQuality": "medical",
+      "lootTypes": ["Antibiotiques", "Bandages", "IV Saline", "Blood Bags", "Morphine"],
+      "buildings": "Hôpital (3 étages)",
+      "danger": "Très élevé (dans Elektro)"
     },
     {
       "id": "chern-11",
       "name": "Hospital Cherno",
       "type": "hospital",
       "coordinates": [51.18, 10.0],
-      "description": "Hôpital de Cherno, équipement médical",
-      "lootQuality": "medical"
+      "description": "Hôpital de Cherno, medical supplies tier 2-3",
+      "lootQuality": "medical",
+      "lootTypes": ["Antibiotiques", "Charcoal Tablets", "Bandages", "Saline"],
+      "buildings": "Hôpital (2 étages)",
+      "danger": "Élevé"
     },
     {
       "id": "chern-12",
@@ -94,31 +127,208 @@
       "type": "hospital",
       "coordinates": [52.48, 13.02],
       "description": "Hôpital côtier, medical supplies",
-      "lootQuality": "medical"
+      "lootQuality": "medical",
+      "lootTypes": ["Médical complet", "Antibiotiques", "Blood bags"],
+      "buildings": "Hôpital (2 étages)",
+      "danger": "Très élevé"
     },
     {
       "id": "chern-13",
       "name": "Green Mountain",
       "type": "landmark",
       "coordinates": [51.8, 9.5],
-      "description": "Tour de transmission, lieu mystérieux",
-      "lootQuality": "low"
+      "description": "Tour de transmission mystérieuse",
+      "lootQuality": "low",
+      "lootTypes": ["Loot civil basique", "Radio equipment"],
+      "buildings": "Tour + Petit compound",
+      "danger": "Faible"
     },
     {
       "id": "chern-14",
       "name": "Devils Castle",
       "type": "landmark",
       "coordinates": [52.2, 10.8],
-      "description": "Château, bonne vue stratégique",
-      "lootQuality": "medium"
+      "description": "Château médiéval, vue stratégique",
+      "lootQuality": "medium",
+      "lootTypes": ["Loot civil", "Parfois armes"],
+      "buildings": "Ruines du château",
+      "danger": "Faible-Moyen"
     },
     {
       "id": "chern-15",
       "name": "Kamensk Military Base",
       "type": "military",
       "coordinates": [52.8, 12.5],
-      "description": "Base militaire de l'est, loot militaire tier 3-4",
-      "lootQuality": "military"
+      "description": "Base militaire de l'est, loot tier 3-4",
+      "lootQuality": "military",
+      "lootTypes": ["Armes militaires", "Munitions", "Équipement tactique"],
+      "buildings": "Barracks (x3), Tentes (x8), Bunker",
+      "danger": "Très élevé"
+    },
+    {
+      "id": "chern-16",
+      "name": "Severograd",
+      "type": "city",
+      "coordinates": [52.9, 10.2],
+      "description": "Ville du nord, bon loot général",
+      "lootQuality": "high",
+      "lootTypes": ["Nourriture", "Armes civiles", "Vêtements", "Médical"],
+      "buildings": "Supermarché, Police, Pompiers, 35+ maisons",
+      "danger": "Moyen"
+    },
+    {
+      "id": "chern-17",
+      "name": "Vybor",
+      "type": "city",
+      "coordinates": [52.3, 9.2],
+      "description": "Ville proche NWAF, base militaire",
+      "lootQuality": "medium",
+      "lootTypes": ["Nourriture", "Outils", "Armes civiles"],
+      "buildings": "Supermarché, Police, Base militaire nearby, 30+ maisons",
+      "danger": "Élevé"
+    },
+    {
+      "id": "chern-18",
+      "name": "Myshkino Tents",
+      "type": "military",
+      "coordinates": [52.5, 9.8],
+      "description": "Camp militaire de tentes, loot tier 3",
+      "lootQuality": "military",
+      "lootTypes": ["Armes militaires", "Munitions", "Équipement"],
+      "buildings": "Tentes militaires (x10)",
+      "danger": "Très élevé"
+    },
+    {
+      "id": "chern-19",
+      "name": "Pavlovo Military Base",
+      "type": "military",
+      "coordinates": [51.5, 9.5],
+      "description": "Base militaire sud-ouest, tier 2-3",
+      "lootQuality": "military",
+      "lootTypes": ["Armes militaires", "Munitions", "Vêtements militaires"],
+      "buildings": "Barracks (x2), Tentes (x6)",
+      "danger": "Élevé"
+    },
+    {
+      "id": "chern-20",
+      "name": "Svetlojarsk",
+      "type": "city",
+      "coordinates": [53.2, 13.5],
+      "description": "Ville côtière du nord-est",
+      "lootQuality": "medium",
+      "lootTypes": ["Nourriture", "Vêtements", "Armes civiles", "Outils"],
+      "buildings": "Police, Pompiers, 25+ maisons",
+      "danger": "Moyen"
+    },
+    {
+      "id": "chern-21",
+      "name": "Solnichniy",
+      "type": "city",
+      "coordinates": [52.2, 12.8],
+      "description": "Ville industrielle avec usines",
+      "lootQuality": "medium",
+      "lootTypes": ["Industriel", "Nourriture", "Outils"],
+      "buildings": "Usine, Police, 20+ maisons",
+      "danger": "Moyen"
+    },
+    {
+      "id": "chern-22",
+      "name": "Gorka",
+      "type": "city",
+      "coordinates": [52.6, 11.2],
+      "description": "Village militaire au centre",
+      "lootQuality": "military",
+      "lootTypes": ["Militaire tier 2", "Armes", "Munitions"],
+      "buildings": "Compound militaire, 15+ maisons",
+      "danger": "Élevé"
+    },
+    {
+      "id": "chern-23",
+      "name": "Polana",
+      "type": "city",
+      "coordinates": [52.4, 10.8],
+      "description": "Village avec usine textile",
+      "lootQuality": "medium",
+      "lootTypes": ["Vêtements", "Nourriture", "Outils"],
+      "buildings": "Usine textile, 20+ maisons",
+      "danger": "Faible"
+    },
+    {
+      "id": "chern-24",
+      "name": "Nadezhdino",
+      "type": "city",
+      "coordinates": [51.8, 11.5],
+      "description": "Village au sud-est",
+      "lootQuality": "medium",
+      "lootTypes": ["Nourriture", "Armes civiles", "Vêtements"],
+      "buildings": "Police, 25+ maisons",
+      "danger": "Moyen"
+    },
+    {
+      "id": "chern-25",
+      "name": "Komarovo",
+      "type": "city",
+      "coordinates": [51.0, 9.5],
+      "description": "Village côtier au sud-ouest",
+      "lootQuality": "low",
+      "lootTypes": ["Loot basique", "Nourriture", "Outils"],
+      "buildings": "15+ maisons, Petit port",
+      "danger": "Faible"
+    },
+    {
+      "id": "chern-26",
+      "name": "Kamenka",
+      "type": "city",
+      "coordinates": [51.0, 8.8],
+      "description": "Village spawn à l'ouest",
+      "lootQuality": "low",
+      "lootTypes": ["Loot de départ", "Nourriture basique"],
+      "buildings": "10+ maisons",
+      "danger": "Faible"
+    },
+    {
+      "id": "chern-27",
+      "name": "Vyshnoye",
+      "type": "city",
+      "coordinates": [52.7, 12.2],
+      "description": "Village agricole",
+      "lootQuality": "low",
+      "lootTypes": ["Nourriture", "Outils agricoles"],
+      "buildings": "Fermes, 15+ maisons",
+      "danger": "Faible"
+    },
+    {
+      "id": "chern-28",
+      "name": "Dubrovka",
+      "type": "city",
+      "coordinates": [52.2, 12.2],
+      "description": "Village avec école",
+      "lootQuality": "medium",
+      "lootTypes": ["Nourriture", "Vêtements", "Livres"],
+      "buildings": "École, 20+ maisons",
+      "danger": "Faible"
+    },
+    {
+      "id": "chern-29",
+      "name": "Staroye",
+      "type": "city",
+      "coordinates": [51.5, 11.8],
+      "description": "Village au sud",
+      "lootQuality": "low",
+      "lootTypes": ["Loot civil basique"],
+      "buildings": "15+ maisons",
+      "danger": "Faible"
+    },
+    {
+      "id": "chern-30",
+      "name": "Troitskoe Military Base",
+      "type": "military",
+      "coordinates": [53.0, 11.5],
+      "description": "Base militaire du nord",
+      "lootQuality": "military",
+      "lootTypes": ["Armes militaires tier 3", "Munitions", "Équipement"],
+      "buildings": "Barracks (x2), Tentes (x4)",
+      "danger": "Élevé"
     }
   ],
   "livonia": [
@@ -127,32 +337,44 @@
       "name": "Gieraltow",
       "type": "city",
       "coordinates": [51.5, 10.5],
-      "description": "Grande ville de Livonia, excellent loot",
-      "lootQuality": "high"
+      "description": "Plus grande ville de Livonia",
+      "lootQuality": "high",
+      "lootTypes": ["Armes", "Nourriture", "Médical", "Industriel"],
+      "buildings": "Hôpital, Police, Pompiers, Supermarché, 50+ maisons",
+      "danger": "Très élevé"
     },
     {
       "id": "liv-2",
       "name": "Nadbor",
       "type": "city",
       "coordinates": [52.0, 11.0],
-      "description": "Ville industrielle, bon loot général",
-      "lootQuality": "high"
+      "description": "Ville industrielle majeure",
+      "lootQuality": "high",
+      "lootTypes": ["Industriel", "Nourriture", "Armes", "Outils"],
+      "buildings": "Hôpital, Police, Zone industrielle, 40+ maisons",
+      "danger": "Élevé"
     },
     {
       "id": "liv-3",
       "name": "Sitnik",
       "type": "city",
       "coordinates": [51.8, 9.5],
-      "description": "Petite ville, loot médical",
-      "lootQuality": "medium"
+      "description": "Ville moyenne avec clinique médicale",
+      "lootQuality": "medium",
+      "lootTypes": ["Médical", "Nourriture", "Vêtements"],
+      "buildings": "Clinique, Police, 25+ maisons",
+      "danger": "Moyen"
     },
     {
       "id": "liv-4",
       "name": "Kolembrody",
       "type": "city",
       "coordinates": [52.3, 10.0],
-      "description": "Ville moyenne avec zone industrielle",
-      "lootQuality": "medium"
+      "description": "Ville avec zone industrielle",
+      "lootQuality": "medium",
+      "lootTypes": ["Industriel", "Nourriture", "Outils"],
+      "buildings": "Usine, Police, 30+ maisons",
+      "danger": "Moyen"
     },
     {
       "id": "liv-5",
@@ -160,55 +382,76 @@
       "type": "city",
       "coordinates": [51.2, 11.5],
       "description": "Ville côtière, spawn area",
-      "lootQuality": "medium"
+      "lootQuality": "medium",
+      "lootTypes": ["Nourriture", "Armes civiles", "Vêtements"],
+      "buildings": "Police, Port, 25+ maisons",
+      "danger": "Moyen-Élevé"
     },
     {
       "id": "liv-6",
       "name": "Topolin",
       "type": "city",
       "coordinates": [52.5, 11.5],
-      "description": "Petite ville au nord",
-      "lootQuality": "low"
+      "description": "Village au nord",
+      "lootQuality": "low",
+      "lootTypes": ["Loot civil basique"],
+      "buildings": "15+ maisons",
+      "danger": "Faible"
     },
     {
       "id": "liv-7",
       "name": "Swarog Military Base",
       "type": "military",
       "coordinates": [52.8, 10.8],
-      "description": "Grande base militaire, loot tier 4",
-      "lootQuality": "military"
+      "description": "Plus grande base militaire de Livonia, tier 4",
+      "lootQuality": "military",
+      "lootTypes": ["Armes militaires rares", "NVG", "Suppressors", "High-tier gear"],
+      "buildings": "Barracks (x5), Bunkers (x2), Tentes (x10), ATC Tower",
+      "danger": "EXTRÊME - KOS zone"
     },
     {
       "id": "liv-8",
       "name": "Radunin Military Base",
       "type": "military",
       "coordinates": [51.5, 9.8],
-      "description": "Base militaire sud, bon loot militaire",
-      "lootQuality": "military"
+      "description": "Base militaire sud, tier 3",
+      "lootQuality": "military",
+      "lootTypes": ["Armes militaires", "Munitions", "Équipement tactique"],
+      "buildings": "Barracks (x3), Tentes (x6)",
+      "danger": "Élevé"
     },
     {
       "id": "liv-9",
       "name": "Lembork Military Base",
       "type": "military",
       "coordinates": [52.2, 11.8],
-      "description": "Complexe militaire, très dangereux",
-      "lootQuality": "military"
+      "description": "Complexe militaire à l'est, tier 3-4",
+      "lootQuality": "military",
+      "lootTypes": ["Armes militaires", "Munitions", "Vêtements militaires", "Plates"],
+      "buildings": "Barracks (x4), Tentes (x8), Bunker",
+      "danger": "Très élevé"
     },
     {
       "id": "liv-10",
       "name": "Hospital Gieraltow",
       "type": "hospital",
       "coordinates": [51.52, 10.55],
-      "description": "Hôpital principal, medical supplies",
-      "lootQuality": "medical"
+      "description": "Hôpital principal de Livonia",
+      "lootQuality": "medical",
+      "lootTypes": ["Tout médical tier 2-3", "Antibiotiques", "Blood bags", "Saline"],
+      "buildings": "Hôpital (3 étages)",
+      "danger": "Très élevé"
     },
     {
       "id": "liv-11",
       "name": "Hospital Nadbor",
       "type": "hospital",
       "coordinates": [52.02, 11.05],
-      "description": "Clinique médicale",
-      "lootQuality": "medical"
+      "description": "Clinique médicale tier 2",
+      "lootQuality": "medical",
+      "lootTypes": ["Médical complet", "Antibiotiques", "Bandages"],
+      "buildings": "Clinique (2 étages)",
+      "danger": "Élevé"
     },
     {
       "id": "liv-12",
@@ -216,7 +459,10 @@
       "type": "landmark",
       "coordinates": [52.0, 10.5],
       "description": "Pavillon de chasse, loot de chasse",
-      "lootQuality": "medium"
+      "lootQuality": "medium",
+      "lootTypes": ["Armes de chasse", "Munitions", "Couteaux", "Équipement survie"],
+      "buildings": "Lodge + Cabanes",
+      "danger": "Faible"
     },
     {
       "id": "liv-13",
@@ -224,7 +470,10 @@
       "type": "landmark",
       "coordinates": [51.7, 10.2],
       "description": "Usine abandonnée, loot industriel",
-      "lootQuality": "medium"
+      "lootQuality": "medium",
+      "lootTypes": ["Industriel", "Outils", "Pièces mécaniques"],
+      "buildings": "Grande usine",
+      "danger": "Faible-Moyen"
     },
     {
       "id": "liv-14",
@@ -232,7 +481,10 @@
       "type": "landmark",
       "coordinates": [52.4, 10.5],
       "description": "Site d'avion crashé, rare loot",
-      "lootQuality": "high"
+      "lootQuality": "high",
+      "lootTypes": ["Armes rares", "Équipement tactique", "Munitions"],
+      "buildings": "Épave d'avion",
+      "danger": "Moyen"
     },
     {
       "id": "liv-15",
@@ -240,7 +492,120 @@
       "type": "landmark",
       "coordinates": [51.9, 11.3],
       "description": "Scierie, loot industriel et outils",
-      "lootQuality": "medium"
+      "lootQuality": "medium",
+      "lootTypes": ["Outils", "Haches", "Scies", "Matériaux construction"],
+      "buildings": "Scierie + Entrepôts",
+      "danger": "Faible"
+    },
+    {
+      "id": "liv-16",
+      "name": "Branzow",
+      "type": "city",
+      "coordinates": [51.8, 10.8],
+      "description": "Village agricole",
+      "lootQuality": "low",
+      "lootTypes": ["Nourriture", "Outils agricoles", "Vêtements"],
+      "buildings": "Fermes, 20+ maisons",
+      "danger": "Faible"
+    },
+    {
+      "id": "liv-17",
+      "name": "Lukow",
+      "type": "city",
+      "coordinates": [52.2, 10.5],
+      "description": "Village avec école",
+      "lootQuality": "medium",
+      "lootTypes": ["Nourriture", "Livres", "Vêtements"],
+      "buildings": "École, 15+ maisons",
+      "danger": "Faible"
+    },
+    {
+      "id": "liv-18",
+      "name": "Jadwisin",
+      "type": "city",
+      "coordinates": [51.6, 11.2],
+      "description": "Village côtier au sud",
+      "lootQuality": "low",
+      "lootTypes": ["Loot basique", "Nourriture"],
+      "buildings": "10+ maisons, Petit port",
+      "danger": "Faible"
+    },
+    {
+      "id": "liv-19",
+      "name": "Podlasek",
+      "type": "city",
+      "coordinates": [52.6, 10.2],
+      "description": "Village du nord",
+      "lootQuality": "low",
+      "lootTypes": ["Loot civil", "Nourriture"],
+      "buildings": "15+ maisons",
+      "danger": "Faible"
+    },
+    {
+      "id": "liv-20",
+      "name": "Military Checkpoint Alpha",
+      "type": "military",
+      "coordinates": [51.4, 10.2],
+      "description": "Checkpoint militaire, loot tier 2",
+      "lootQuality": "military",
+      "lootTypes": ["Armes militaires basiques", "Munitions", "Vêtements"],
+      "buildings": "Checkpoint + Tentes (x3)",
+      "danger": "Moyen"
+    },
+    {
+      "id": "liv-21",
+      "name": "Military Checkpoint Bravo",
+      "type": "military",
+      "coordinates": [52.5, 11.2],
+      "description": "Checkpoint militaire est, tier 2",
+      "lootQuality": "military",
+      "lootTypes": ["Armes militaires", "Munitions"],
+      "buildings": "Checkpoint + Tentes (x2)",
+      "danger": "Moyen"
+    },
+    {
+      "id": "liv-22",
+      "name": "Zalesie",
+      "type": "city",
+      "coordinates": [51.3, 10.8],
+      "description": "Village au sud-ouest",
+      "lootQuality": "low",
+      "lootTypes": ["Loot civil basique"],
+      "buildings": "12+ maisons",
+      "danger": "Faible"
+    },
+    {
+      "id": "liv-23",
+      "name": "Zwierz",
+      "type": "city",
+      "coordinates": [52.3, 11.2],
+      "description": "Petit village central",
+      "lootQuality": "low",
+      "lootTypes": ["Nourriture", "Outils"],
+      "buildings": "10+ maisons",
+      "danger": "Faible"
+    },
+    {
+      "id": "liv-24",
+      "name": "Cave System",
+      "type": "landmark",
+      "coordinates": [52.1, 10.2],
+      "description": "Système de grottes, loot caché",
+      "lootQuality": "medium",
+      "lootTypes": ["Loot varié", "Caches"],
+      "buildings": "Grottes naturelles",
+      "danger": "Faible"
+    },
+    {
+      "id": "liv-25",
+      "name": "Radio Tower",
+      "type": "landmark",
+      "coordinates": [51.9, 10.6],
+      "description": "Tour radio, équipement électronique",
+      "lootQuality": "low",
+      "lootTypes": ["Équipement radio", "Outils électroniques"],
+      "buildings": "Tour radio + Bâtiment",
+      "danger": "Faible"
     }
   ]
 }

@@ -57,6 +57,15 @@ export default function InteractiveMap({ markers, mapName }) {
     return acc
   }, {})
 
+  // Count stats
+  const stats = {
+    total: markers.length,
+    military: markers.filter(m => m.type === 'military').length,
+    cities: markers.filter(m => m.type === 'city').length,
+    hospitals: markers.filter(m => m.type === 'hospital').length,
+    landmarks: markers.filter(m => m.type === 'landmark').length
+  }
+
   return (
     <div className="w-full space-y-6">
       {/* Map Header */}
@@ -65,9 +74,27 @@ export default function InteractiveMap({ markers, mapName }) {
           <MapPin className="w-6 h-6 text-primary" />
           Carte de {mapTitle}
         </h3>
-        <p className="text-muted-foreground">
-          {markers.length} locations disponibles sur cette carte
+        <p className="text-muted-foreground mb-4">
+          {stats.total} locations disponibles sur cette carte
         </p>
+        <div className="flex gap-4 flex-wrap text-sm">
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 rounded-full bg-blue-500" />
+            <span>{stats.cities} Villes</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 rounded-full bg-red-500" />
+            <span>{stats.military} Zones Militaires</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 rounded-full bg-green-500" />
+            <span>{stats.hospitals} Hôpitaux</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 rounded-full bg-yellow-500" />
+            <span>{stats.landmarks} Points d'intérêt</span>
+          </div>
+        </div>
       </div>
 
       {/* Markers Grid by Type */}
@@ -91,21 +118,52 @@ export default function InteractiveMap({ markers, mapName }) {
                       <CardHeader className="pb-3">
                         <div className="flex items-start justify-between gap-2">
                           <div className="flex-1">
-                            <CardTitle className="text-lg flex items-center gap-2">
+                            <CardTitle className="text-lg flex items-center gap-2 mb-1">
                               <Icon className={`w-5 h-5 ${getMarkerColor(type).split(' ')[0]}`} />
                               {marker.name}
                             </CardTitle>
+                            <Badge className={`${badge.color} text-white text-xs`}>
+                              {badge.text}
+                            </Badge>
                           </div>
-                          <Badge className={`${badge.color} text-white text-xs`}>
-                            {badge.text}
-                          </Badge>
                         </div>
                       </CardHeader>
-                      <CardContent>
-                        <p className="text-sm text-muted-foreground mb-3">
+                      <CardContent className="space-y-3">
+                        <p className="text-sm text-muted-foreground">
                           {marker.description}
                         </p>
-                        <div className="flex items-center justify-between text-xs">
+                        
+                        {/* Loot Types */}
+                        {marker.lootTypes && (
+                          <div>
+                            <h5 className="text-xs font-semibold mb-2 text-primary">🎒 Types de Loot:</h5>
+                            <div className="flex flex-wrap gap-1">
+                              {marker.lootTypes.map((loot, idx) => (
+                                <Badge key={idx} variant="outline" className="text-xs">
+                                  {loot}
+                                </Badge>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                        
+                        {/* Buildings */}
+                        {marker.buildings && (
+                          <div>
+                            <h5 className="text-xs font-semibold mb-1 text-primary">🏢 Bâtiments:</h5>
+                            <p className="text-xs text-muted-foreground">{marker.buildings}</p>
+                          </div>
+                        )}
+                        
+                        {/* Danger Level */}
+                        {marker.danger && (
+                          <div>
+                            <h5 className="text-xs font-semibold mb-1 text-primary">⚠️ Danger:</h5>
+                            <p className="text-xs text-muted-foreground">{marker.danger}</p>
+                          </div>
+                        )}
+                        
+                        <div className="flex items-center justify-between text-xs pt-2 border-t border-border">
                           <span className="text-muted-foreground">
                             <strong>Type:</strong> {getTypeLabel(marker.type)}
                           </span>
