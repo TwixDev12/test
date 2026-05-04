@@ -243,11 +243,14 @@ class AppModule {}
 
 async function bootstrap() {
   const app = await NestFactory.create<NestFastifyApplication>(AppModule, new FastifyAdapter({ logger: true }));
-  await app.register(rateLimit, {
+  // @fastify/rate-limit augments Fastify's instance types.
+  // Nest's FastifyAdapter exposes a narrower register() signature during compilation,
+  // so we cast the plugin/options at the integration boundary instead of weakening app types globally.
+  await app.register(rateLimit as never, {
     max: 120,
     timeWindow: '1 minute',
-    keyGenerator: (req: FastifyRequest) => clientIp(req),
-  });
+    keyGenerator: (req: unknown) => clientIp(req as FastifyRequest),
+  } as never);
   app.enableCors({ origin: true });
   await app.listen(Number(process.env.PORT ?? 3000), '0.0.0.0');
 }
