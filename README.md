@@ -342,3 +342,13 @@ docker compose exec api npx tsx src/seed-bonus.worker.ts
 - Ajouter parser `.torrent` robuste et validation anti-malware sur les noms de fichiers.
 - Séparer domaine web et domaine announce.
 - Activer logs structurés sans passkey.
+
+## Déploiement Vercel multi-services
+
+Le fichier `vercel.json` à la racine déclare deux services :
+
+- `frontend` : application Vite exposée sur `/`.
+- `backend` : API Node/NestJS exposée sur `/_/backend`.
+
+Pour un déploiement cloud réel, PostgreSQL, Redis et Meilisearch doivent être remplacés par des services managés ou externes. Le `docker-compose.yml` reste destiné au développement local.
+
