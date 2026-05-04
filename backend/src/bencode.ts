@@ -1,3 +1,4 @@
+import { Buffer } from 'node:buffer';
 export type BValue = string | Buffer | number | BValue[] | { [key: string]: BValue };
 
 export function bencode(value: BValue): Buffer {

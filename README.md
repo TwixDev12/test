@@ -352,3 +352,19 @@ Le fichier `vercel.json` à la racine déclare deux services :
 
 Pour un déploiement cloud réel, PostgreSQL, Redis et Meilisearch doivent être remplacés par des services managés ou externes. Le `docker-compose.yml` reste destiné au développement local.
 
+
+
+## Déploiement Vercel / erreur `npm run build exited with 2`
+
+Cette archive inclut maintenant un `package.json` à la racine pour que Vercel puisse exécuter `npm run build` depuis le monorepo.
+
+Commandes de vérification locale :
+
+```bash
+npm install
+npm run build
+```
+
+Si Vercel construit uniquement le frontend, utilise `npm run build --workspace frontend`. Si Vercel construit le backend séparément, utilise `npm run build --workspace backend`.
+
+Le backend a besoin de variables d'environnement valides à l'exécution, mais pas pour compiler : `DATABASE_URL`, `REDIS_URL`, `MEILI_HOST`, `MEILI_MASTER_KEY`.

@@ -246,7 +246,7 @@ async function bootstrap() {
   await app.register(rateLimit, {
     max: 120,
     timeWindow: '1 minute',
-    keyGenerator: (req) => clientIp(req as FastifyRequest),
+    keyGenerator: (req: FastifyRequest) => clientIp(req),
   });
   app.enableCors({ origin: true });
   await app.listen(Number(process.env.PORT ?? 3000), '0.0.0.0');

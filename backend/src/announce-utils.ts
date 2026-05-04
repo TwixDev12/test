@@ -1,3 +1,4 @@
+import { Buffer } from 'node:buffer';
 export type AnnounceParams = {
   infoHash: Buffer;
   peerId: Buffer;
