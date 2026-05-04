@@ -1,20 +1,46 @@
 {
-  "name": "private-tracker-sandbox-monorepo",
-  "version": "0.1.0",
+  "name": "nexushub",
+  "version": "1.0.0",
   "private": true,
-  "type": "module",
-  "workspaces": [
-    "frontend",
-    "backend"
-  ],
+  "description": "NexusHub \u2014 legal digital resources discovery portal with a premium dark tech UI.",
   "scripts": {
-    "build": "npm run build --workspace frontend && npm run build --workspace backend",
-    "build:frontend": "npm run build --workspace frontend",
-    "build:backend": "npm run build --workspace backend",
-    "dev:frontend": "npm run dev --workspace frontend",
-    "dev:backend": "npm run dev --workspace backend"
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio",
+    "db:seed": "tsx prisma/seed.ts"
   },
-  "engines": {
-    "node": ">=20"
+  "dependencies": {
+    "@prisma/client": "latest",
+    "bcryptjs": "latest",
+    "clsx": "latest",
+    "jsonwebtoken": "latest",
+    "lucide-react": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "@types/bcryptjs": "latest",
+    "@types/jsonwebtoken": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "prisma": "latest",
+    "tailwindcss": "latest",
+    "tsx": "latest",
+    "typescript": "latest",
+    "@eslint/eslintrc": "latest"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
   }
 }
